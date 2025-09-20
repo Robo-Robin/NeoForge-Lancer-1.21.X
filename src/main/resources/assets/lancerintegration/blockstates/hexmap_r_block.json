@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lancerintegration:block/hexmap_r_block"
+    }
+  }
+}

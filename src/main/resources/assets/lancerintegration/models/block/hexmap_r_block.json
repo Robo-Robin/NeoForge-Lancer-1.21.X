@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lancerintegration:block/hexmap_r_block"
+  }
+}

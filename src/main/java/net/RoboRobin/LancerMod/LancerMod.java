@@ -1,5 +1,6 @@
 package net.RoboRobin.LancerMod;
 
+import net.RoboRobin.LancerMod.block.ModBlocks;
 import net.RoboRobin.LancerMod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,7 @@ public class LancerMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -58,6 +60,11 @@ public class LancerMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.FILAMENT);
             event.accept(ModItems.STEEL_FILAMENT);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.HEXMAP_L_BLOCK);
+            event.accept(ModBlocks.HEXMAP_R_BLOCK);
         }
     }
 
