@@ -63,11 +63,15 @@ public class LancerMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.FILAMENT);
             event.accept(ModItems.STEEL_FILAMENT);
+            event.accept(ModItems.ADAPTIUM);
+            event.accept(ModItems.RAW_ADAPTIUM);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.HEXMAP_L_BLOCK);
             event.accept(ModBlocks.HEXMAP_R_BLOCK);
+            event.accept(ModBlocks.ADAPTIUM_BLOCK);
+            event.accept(ModBlocks.GENERIC_PRINTING_MATERIAL);
         }
     }
 

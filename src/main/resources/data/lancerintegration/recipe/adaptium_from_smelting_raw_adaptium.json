@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.25,
+  "group": "adaptium",
+  "ingredient": {
+      "item": "lancerintegration:raw_adaptium"
+    },
+  "result": {
+    "count": 1,
+    "id": "lancerintegration:adaptium"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "lancerintegration:generic_printing_material"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "lancerintegration:filament"
+  }
+}

@@ -22,13 +22,27 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.FILAMENT);
                         output.accept(ModItems.STEEL_FILAMENT);
+                        output.accept(ModItems.ADAPTIUM);
+                        output.accept(ModItems.RAW_ADAPTIUM);
+                    })
+
+                    .build());
+
+public static final Supplier<CreativeModeTab> PRINTING_BLOCKS_TAB  = CREATIVE_MODE_TAB.register("printing_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.GENERIC_PRINTING_MATERIAL))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LancerMod.MOD_ID, "printing_items_tab"))
+                    .title(Component.translatable("creativetab.lancerintegration.printing_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.GENERIC_PRINTING_MATERIAL);
+                        output.accept(ModBlocks.ADAPTIUM_BLOCK);
+                        output.accept(ModBlocks.ADAPTIUM_ORE);
                     })
 
                     .build());
 
     public static final Supplier<CreativeModeTab> BATTLEMAP_BLOCK_TAB  = CREATIVE_MODE_TAB.register("battlemap_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.HEXMAP_L_BLOCK))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LancerMod.MOD_ID, "printing_items_tab"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LancerMod.MOD_ID, "printing_blocks_tab"))
                     .title(Component.translatable("creativetab.lancerintegration.battlemap_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.HEXMAP_L_BLOCK);

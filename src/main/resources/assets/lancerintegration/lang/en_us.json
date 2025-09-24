@@ -1,10 +1,17 @@
 {
   "item.lancerintegration.filament": "Filament",
   "item.lancerintegration.steel_filament": "Steel Filament",
+  "item.lancerintegration.adaptium": "Adaptium",
+  "item.lancerintegration.raw_adaptium": "Raw Adaptium",
+
+  "block.lancerintegration.generic_printing_material": "Block of Printing Filament",
+  "block.lancerintegration.adaptium_block": "Block of Adaptium",
+  "block.lancerintegration.adaptium_ore": "Adaptium Ore",
 
   "block.lancerintegration.hexmap_l_block": "Hexmap Bottom Left Block - Size 2:1",
   "block.lancerintegration.hexmap_r_block": "Hexmap Bottom Right Block - Size 2:1",
 
   "creativetab.lancerintegration.printing_items": "3D Printing Items",
+  "creativetab.lancerintegration.printing_blocks": "3D Printing Blocks",
   "creativetab.lancerintegration.battlemap_blocks": "Battlemap Blocks"
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lancerintegration:block/adaptium_block"
+    }
+  }
+}

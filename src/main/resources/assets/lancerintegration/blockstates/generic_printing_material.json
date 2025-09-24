@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lancerintegration:block/generic_printing_material"
+    }
+  }
+}
